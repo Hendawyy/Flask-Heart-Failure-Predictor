@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>Heart Failure Test Result</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+body{
+	background-image: url("{{ url_for('static', filename='pic1.jpg') }}");
+	background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height:100vh;
+	font-family: 'Noto Sans', sans-serif;
+}
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+.green:hover {
+		color: #93f071;
+	text-shadow: 0px 0px 10px #93f071;
+}
+.blue:hover {
+	color: #71b7f0;
+	text-shadow: 0px 0px 10px #71b7f0;
+}
+.purple:hover {
+	color: #b971f0;
+	text-shadow: 0px 0px 10px #b971f0;
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	color:#fff;
+	background-color:#e74c3c;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+	
+	font-size: 16px;
+}
+button:hover {
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+	font-size: 15px;
+	transition: 500ms;
+}
+
+button:focus {
+	outline: none;
+}
+
+.red:hover {
+	color: #f07171;
+	text-shadow: 0px 0px 10px #f07171;
+}
+	label{
+		text-align:left;
+	}
+</style>
+</head>
+<body>
+<center>
+<form method="POST">
+<div class="box">
+<!--
+<span class="text-center">Enter Your Medical Data</span>
+<div class="input-container">
+<input type="text" name = "age" required=""/>
+<label style="margin-left: 140px;">Age</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "anaemia" required=""/>
+<label style="margin-left: 128px;">Anemia</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "creatinine_phosphokinase" required=""/>
+<label style="margin-left: 57px;">Creatinine Phosphokinase</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "diabetes" required=""/>
+<label style="margin-left: 125px;">Diabetes</label>		
+</div>
+-->
+<div class="input-container">
+<input type="text" name = "ejection_fraction" required=""/>
+<label style="margin-left: 20px;">Ejection Fraction</label>		
+</div>
+<!--
+<div class="input-container">
+<input type="text" name = "high_blood_pressure" required=""/>
+<label style="margin-left: 90px;">High Blood Pressure</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "platelets" required=""/>
+<label style="margin-left: 125px;">Platelets</label>		
+</div>
+-->
+<div class="input-container">
+<input type="text" name = "serum_creatinine" required=""/>
+<label style="margin-left: 18px;">Serum Creatinine</label>		
+</div>
+<!--
+<div class="input-container">
+<input type="text" name = "serum_sodium" required=""/>
+<label style="margin-left: 100px;">Serum Sodium</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "sex" required=""/>
+<label style="margin-left: 140px;">Sex</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "smoking" required=""/>
+<label style="margin-left: 125px;">Smoking</label>		
+</div>
+<div class="input-container">
+<input type="text" name = "time" required=""/>
+<label style="margin-left: 135px;">Time</label>		
+</div>
+-->
+<center><button class="noselect blue" type = 'submit'>Predict</button></center>
+</div>
+</form>	
+</center>
+</body>
+</html>

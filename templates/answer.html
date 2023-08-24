@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<title>Heart Failure Test Result</title>
+<head>
+<style>
+:root {
+  background: radial-gradient(#050526 0%, #000000 90%) -20vw 10vh no-repeat black;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  perspective: 340px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.centered {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translateX(-50%) translateY(-50%) rotateX(15deg);
+  text-align: center;
+}
+
+.cyberspace {
+  position: relative;
+  font-family: 'Cyberspace-Raceway-Back',sans-serif;
+  font-size: 4rem;
+  color: black;
+  -webkit-clip: background;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FFE81F;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #000000;
+  filter: url(#extrude);
+}
+
+.stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  box-shadow: 130px 467px #f0f0f0, 579px -473px #e3e3e3, 750px -435px white, 429px 30px #cfcfcf, -84px 330px #d6d6d6, -912px 44px #f0f0f0, -492px -161px #e3e3e3, -1207px -228px whitesmoke, 1155px -344px #fafafa, 1328px -5px #c9c9c9, 1469px 154px #cccccc, -78px -120px #e8e8e8, 295px -251px #dbdbdb, 1122px 458px #fafafa, 476px -353px #d9d9d9, 406px -161px #d6d6d6, 573px 27px #f7f7f7, -465px 313px #e3e3e3, 1088px 106px #dedede, -956px -426px #d6d6d6, 1427px 302px #c4c4c4, -542px 200px #cccccc, -236px 65px #fafafa, -629px -84px #c9c9c9, -458px -434px #f2f2f2, 237px 250px #e8e8e8, 743px -124px #e6e6e6, 497px -136px #d6d6d6, -1305px 213px #e8e8e8, 1062px 117px #d6d6d6, -687px 29px whitesmoke, -1219px 444px #dbdbdb, 238px -65px #e6e6e6, 94px -72px #d1d1d1, 438px 409px #c7c7c7, -56px 259px #c9c9c9, -673px -229px #cfcfcf, 786px 383px #e0e0e0, -1456px -215px #d9d9d9, -630px -259px whitesmoke, 1037px -460px #c7c7c7, 635px 323px #e8e8e8, -1293px -211px #c9c9c9, 829px -128px #e3e3e3, 95px 450px #ededed, 1063px 355px #d1d1d1, -824px -434px #e6e6e6, 1466px 361px #f0f0f0, -829px 141px #e8e8e8, 691px -274px #e8e8e8, -200px 360px #cccccc, -921px 428px #c7c7c7, -1399px 442px #e3e3e3, 1284px -70px #e0e0e0, -1286px 328px whitesmoke, 1278px -256px whitesmoke, 282px -436px #dedede, 1466px 14px #f7f7f7, 1082px 182px #c4c4c4, 955px 211px #fafafa, -197px -128px #c4c4c4, -473px 278px whitesmoke, -108px 124px #ebebeb, 1323px -23px #d4d4d4, 1066px -421px #dedede, 1461px 27px #fafafa, 794px 236px #c4c4c4, 738px 348px #d4d4d4, 700px -37px #d4d4d4, 271px -457px white, 1059px 151px white, -1222px -405px white, -119px -303px #cccccc, 172px 395px #fafafa, -375px -410px #f7f7f7, 1471px 287px #f0f0f0, -532px -253px #c7c7c7, -956px -227px #d9d9d9, -724px -333px #ebebeb, -1032px 157px #d6d6d6, -1276px 317px white, 971px 263px #fcfcfc, -1458px 261px #e8e8e8, -1378px 376px #d1d1d1, 1166px -422px #e0e0e0, 931px 238px #d9d9d9, 141px -352px #f2f2f2, 1418px 177px #ededed, -921px -271px #fcfcfc, -1059px -338px #cccccc, -43px -4px #d4d4d4, 314px 122px #e6e6e6, 1152px 230px #c4c4c4, 1328px 137px #f7f7f7, 106px -103px #e3e3e3, 173px 92px #e6e6e6, 1162px -420px #cfcfcf, 607px -444px #c2c2c2, 938px 89px white, 497px -150px #f2f2f2, 1272px -319px #d1d1d1, -1037px 108px #fafafa, -375px -378px #fcfcfc, 185px 130px #fafafa, -1264px 27px #dedede, 434px 50px #d6d6d6, -134px 354px #e8e8e8, -618px 28px #dedede, 917px 307px #c9c9c9, 635px 128px #ededed, 1007px 412px #f0f0f0, -267px 389px white, -150px 322px #cccccc, 1313px -296px white, 930px 244px #ebebeb, -741px 452px #e6e6e6, -874px 172px whitesmoke, 381px 432px #ededed, 550px -471px #d9d9d9, 297px 177px #ededed, -1345px 139px #dedede, -828px -8px #fcfcfc, 933px 9px #d4d4d4, 1071px 116px #ebebeb, -1080px 103px #d6d6d6, -856px 302px #ebebeb, 823px -196px #ebebeb, 50px 426px #e8e8e8, -379px 476px #d6d6d6, -488px 405px #c9c9c9, -1496px -268px #d9d9d9, 1094px -375px #d9d9d9, 597px 430px #c4c4c4, -1445px 317px #dbdbdb, -147px -145px #f7f7f7, 88px -111px #d4d4d4, -100px 138px #f0f0f0, 1100px 51px #dbdbdb, 1151px -259px #c7c7c7, 1355px 349px #c7c7c7, 344px -462px white, 56px -169px #c4c4c4, 681px -53px #c4c4c4, -1241px -403px #cccccc, -677px 445px white, 1401px -388px #c7c7c7, 453px 56px #c2c2c2, -1247px 97px #ebebeb, -1013px -387px #c2c2c2, 1022px 294px #c2c2c2, 294px -459px #e6e6e6, 367px 120px #c7c7c7, -905px 80px #dedede, -1117px 271px #e6e6e6, 601px 174px #fcfcfc, -948px 414px #d6d6d6, 269px 364px #d1d1d1, 1382px 423px #e6e6e6, 356px 470px #e8e8e8, -450px 220px #e0e0e0, -627px -295px #e0e0e0, -1472px -58px #ededed, 348px 100px #d9d9d9, 1170px 64px #dbdbdb, 966px 141px #fafafa, 839px 222px #e6e6e6, -569px -93px #d6d6d6, -893px -35px #e0e0e0, -1111px 327px #dbdbdb, 1208px -32px #c2c2c2, 442px -283px #ededed, 1305px 136px #e8e8e8, 1007px 270px #e6e6e6, -646px 150px #d4d4d4, 462px -27px #e8e8e8, 1318px 149px #f2f2f2, -910px -339px whitesmoke, -54px 202px #d6d6d6, -751px 181px #f0f0f0, -48px -229px #dbdbdb, 481px 83px #d9d9d9, -193px -479px #fcfcfc, 834px 2px #fcfcfc, -474px 173px #d4d4d4, -702px -123px #c7c7c7, -492px 391px #e6e6e6, -266px -172px #c4c4c4, -421px -191px #c2c2c2, 952px -410px #dedede, -163px -397px #cfcfcf, -690px 386px #d9d9d9, 1090px -252px #d1d1d1, 1277px 267px #e8e8e8, 1427px 125px #ebebeb, -628px -283px #c7c7c7, -593px 358px #dbdbdb, -821px -84px #d6d6d6, -169px 345px #d9d9d9, 441px 54px #e0e0e0, 331px 213px #c2c2c2, -668px -391px #d4d4d4, 1009px -142px #f2f2f2, -629px 109px #fafafa, -811px 403px #c9c9c9, -1311px -136px #c4c4c4, 653px 397px #ededed, -1091px 410px #d1d1d1, 647px 425px #d9d9d9, 547px -445px #dedede, -63px -53px #f7f7f7, -592px -173px #f2f2f2, -127px 121px whitesmoke, 1104px -75px #d4d4d4, -1125px -110px #d1d1d1, 620px -53px #d9d9d9, 368px 93px #d1d1d1, 559px -303px white, 148px 149px #e8e8e8, 930px 47px #ebebeb, 1065px -140px #ebebeb, -101px 315px whitesmoke, -119px 384px #d9d9d9, 1415px -63px #c7c7c7, 373px 446px #c2c2c2, -111px 409px whitesmoke, -1306px -69px #d9d9d9, 964px 10px #dbdbdb, 170px 142px #e3e3e3, -1268px 215px #ebebeb, 1028px -66px #c9c9c9, -634px -94px #e3e3e3, -1263px -183px #d6d6d6, -1275px -375px #fafafa, -653px -59px #fafafa, -13px 375px #f7f7f7, -242px -388px #c9c9c9, -413px 275px #d9d9d9, 591px 18px #c2c2c2, -629px 179px #cfcfcf, 1405px 369px #dbdbdb, -1161px 270px #e6e6e6, -26px -454px #e0e0e0, -1421px 256px #d1d1d1, 548px -44px whitesmoke, -25px -195px #f7f7f7, 1317px 138px #c2c2c2, -1381px 459px #dbdbdb, 123px 436px #e8e8e8, 231px -92px #c2c2c2, -263px 278px #fcfcfc, -489px 151px whitesmoke, -704px -262px #dedede, -1265px -460px #f2f2f2, -157px 335px #e6e6e6, -575px -190px #c7c7c7, -691px 312px #f7f7f7, 568px -170px #f2f2f2, -168px 49px #d1d1d1, -1162px 258px #f2f2f2, 1066px -76px #cccccc, 1068px 349px #fcfcfc, 636px 395px #e8e8e8, 150px -217px #e3e3e3, -703px -340px #cccccc, -497px -297px #dedede, -637px -204px #e6e6e6, 379px 65px #cfcfcf, 1303px 40px #dedede, 1435px -152px #cfcfcf, -1267px -231px whitesmoke, -751px -308px #d1d1d1, -70px 45px whitesmoke, -316px -127px #e6e6e6, -816px 242px #d1d1d1, -1295px -221px #c7c7c7, -351px 331px white, -178px -276px #cccccc, 632px 174px #d9d9d9, -1259px -102px white, 923px 464px #d1d1d1, 211px -131px #c4c4c4, 1420px -391px #c4c4c4, 432px -8px #cfcfcf, -914px -444px #d4d4d4, 1454px 207px #fafafa, -328px 170px #c2c2c2, -327px -166px #c2c2c2, 169px 71px white, -164px 68px #f0f0f0, -1047px 106px #f2f2f2, 1267px 143px #f7f7f7, 51px -287px #c4c4c4, 130px 33px #e6e6e6, -939px -176px #f2f2f2, 595px -31px #dedede, -929px -475px #d9d9d9, 1262px 233px #e3e3e3, -539px -260px #dedede, 238px 191px whitesmoke, -275px -94px #e6e6e6, -86px 412px #fafafa, -361px -243px #c2c2c2, 790px -93px #f0f0f0, 316px 8px #f0f0f0, -283px -300px #d6d6d6, 410px 95px #c4c4c4, 886px -151px white, 802px 361px #c9c9c9, 161px 276px #d4d4d4, -311px -186px #f0f0f0, -1428px 337px #c2c2c2, -269px 1px #fafafa, 1171px -235px #fafafa, 409px 19px #f2f2f2, 597px 190px #c7c7c7, 683px -451px #f2f2f2, -1493px -456px #c9c9c9, 1417px -442px #f2f2f2, -270px 444px #ededed, 1340px -233px #e3e3e3, -1282px -444px #e8e8e8, 819px 476px white, -961px -125px #c2c2c2, 283px 64px #ededed, -752px 457px #f2f2f2, 847px 67px #e3e3e3, -784px 330px #ededed, -107px 34px #fafafa, 846px 235px #dedede, -965px 156px #c7c7c7, -787px -48px #e6e6e6, -601px 302px #e8e8e8, 424px -245px whitesmoke, 871px 347px #d1d1d1, -846px 298px #d1d1d1, 510px -227px #f7f7f7, -1148px -416px #fcfcfc, 1083px 240px #fcfcfc, 627px -249px #fafafa, 268px 40px #f7f7f7, 1085px 246px white, 338px 479px #e6e6e6, -286px -109px #d1d1d1, -837px 432px #fafafa, 929px -178px #d9d9d9, 1141px -406px white, 898px 228px #e0e0e0, -1449px 158px #c2c2c2, 267px -289px #dedede, -1195px -332px #dedede, 691px -39px #c2c2c2;
+  animation: fly 10s linear infinite;
+  transform-style: preserve-3d;
+}
+.stars:before, .stars:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  box-shadow: inherit;
+}
+.stars:before {
+  transform: translateZ(-300px);
+  animation: fade1 10s linear infinite;
+}
+.stars:after {
+  transform: translateZ(-600px);
+  animation: fade2 10s linear infinite;
+}
+
+@keyframes fly {
+  from {
+    transform: translateZ(0px);
+  }
+  to {
+    transform: translateZ(300px);
+  }
+}
+@keyframes fade1 {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+  animation-delay: 7.5s;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 150px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+/* Set the animation, color, size and hide the text */
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+</style>
+</head>
+<body>
+<audio controls = "controls" autoplay = "autoplay"src = "/static/music/SW.mp3"loop hidden></audio>
+<div class="stars"></div>
+<center><section class="intro">
+   Heart Failure Test ,<br> Result....
+</section>
+</center>
+<div class="fade"></div>
+<section class="star-wars">
+
+  <div class="crawl">
+
+    <div class="title">
+      <p>Your RESULT  IS</p>
+      <h1>{{ predict }}	....</h1>
+    </div>
+    
+    <center>
+	<p>If your RESULT is</p>
+	<p>[0]</p>    
+	<p>This Means,
+		That You Don't Have Any Probality TO Die By a Heart Failiure.</p>
+	<p>WHILE, If Your RESULT IS</p>  
+	<p>[1]<p>
+	<p>This Means,
+		That You Probably Might Die By a Heart Failiure,
+		And You should Watch Your Body, Have Some Workout And Watch Your FOOD Closely.</p>
+		<p>Submitted To.</p>
+		<p>Dr. Ramy Ebeid & Dr. Ahmed Atta.</p>
+	<p>Brought To You By.</p>
+	<p>Seif El-Din Mohamed Abo-El-Hassan................................18105247</p>
+	<p>Shehab Gamal Baioumy...........................18105734</p>
+	<p>Mohamed Ahmed Hagagy...........................18105604</p>
+	<p>Mahmoud Atef 8alwash...........................18106902</p>
+	<p>Thank For Taking Our Test.</p>
+	</center>  
+  </div>
+
+</section>
+
+</body>
+</html>
