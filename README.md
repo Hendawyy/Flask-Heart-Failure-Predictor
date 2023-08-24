@@ -1,2 +1,11 @@
 # Flask-Heart-Failure-Predictor
-This repository contains a Flask web application for predicting heart failure risk based on medical data. It uses a machine learning model to make predictions. The application provides a user-friendly interface for entering medical data and obtaining predictions.
+
+This Flask web application predicts the risk of heart failure based on medical data. It utilizes a machine learning model trained on clinical records to provide predictions with high accuracy.
+
+## Features
+
+- User-friendly interface for inputting medical data.
+- Predicts the likelihood of heart failure.
+- Utilizes a K-Nearest Neighbors (KNN) machine learning model.
+- Provides accuracy metrics and a confusion matrix.
+
